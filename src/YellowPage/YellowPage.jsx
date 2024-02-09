@@ -4,7 +4,7 @@ import './YellowPage.css'
 
 export const YellowPage = () => {
   return (
-    <main>
+    <main className="blog-card-wrapper">
       <div className="blog-card">
         <img alt="" className="blog-card-image" src={blogCardImage} />
         <div className="blog-card-category-label">Learning</div>

@@ -1,0 +1,26 @@
+.summary-card-wrapper {
+  height: 100vh;
+}
+
+.summary-card {
+  height: 100%
+}
+
+.summary-card-meter {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.summary-card-meter-circle {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.summary-card-meter-circle p:first-child {
+  
+}
