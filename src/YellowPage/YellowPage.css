@@ -3,7 +3,7 @@
   src: url('./assets/fonts/Figtree-VariableFont_wght.ttf')
 }
 
-main {
+.blog-card-wrapper {
   background-color: #f5d04e;
   box-sizing: border-box;
   font-family: figtree, Arial, Helvetica, sans-serif;

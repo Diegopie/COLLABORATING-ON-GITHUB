@@ -1,0 +1,169 @@
+@font-face {
+  font-family: hankengrotesk;
+  src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+.summary-card-wrapper {
+  display: none;
+}
+
+.too-small-screen {
+  height: 100vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 300px) {
+  .too-small-screen {
+    display: none;
+  }
+
+  .summary-card-wrapper {
+    display: block;
+    height: 100vh;
+    font-family: hankengrotesk, Arial, Helvetica, sans-serif;
+  }
+
+  .summary-card {
+    height: 100%
+  }
+
+  .summary-card-meter {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: hsl(241, 100%, 89%);
+    padding: 16px 32px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .summary-card-meter p {
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .summary-card-meter-circle {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .summary-card-meter-circle p:first-child {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .summary-card-meter-sentiment {
+    color: white;
+    font-size: 20px;
+  }
+
+  .summary-card-score-breakdown-wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .summary-card-score-breakdown-wrapper h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .summary-card-score-breakdown-wrapper button {
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(221, 100%, 96%);
+    font-size: 16px;
+    margin-top: 8px;
+  }
+
+  .summary-card-score-breakdown-row {
+    box-sizing: border-box;
+    height: 48px;
+    width: 100%;
+    padding: 0px 8px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .reaction {
+    background-color: hsla(0, 100%, 67%, .1);
+    color: hsl(0, 100%, 67%);
+  }
+
+  .memory {
+    background-color: hsla(39, 100%, 56%, .1);
+    color: hsl(39, 100%, 56%);
+  }
+
+  .verbal {
+    background-color: hsla(166, 100%, 37%, .1);
+    color: hsl(166, 100%, 37%);
+  }
+
+  .visual {
+    background-color: hsla(234, 85%, 45%, .1);
+    color: hsl(234, 85%, 45%);
+  }
+
+  .summary-card-score-break-down-topic {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+  }
+
+  .summary-card-score-breakdown-row-score {
+    color: hsla(224, 30%, 27%, .5);
+    font-weight: bold;
+  }
+
+  .summary-card-score-breakdown-row-score span {
+    color: hsl(224, 30%, 27%);
+  }
+}
+
+@media (min-width: 500px) {
+  .summary-card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .summary-card {
+    height: 350px;
+    width: 480px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    box-shadow: 0px 8px 12px 4px hsl(221, 100%, 96%);
+  }
+
+  .summary-card-meter {
+    border-radius: 20px;
+    width: 50%;
+  }
+
+  .summary-card-score-breakdown-wrapper {
+    width: 50%;
+  }
+}
