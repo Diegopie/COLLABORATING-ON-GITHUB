@@ -1,20 +1,29 @@
 .BlackPage {
   background-color: rgb(70, 70, 70);
   /* This is creating extra scroll that I don't want */
-  height: 94vh;
+  height: calc(100vh - 2.6rem);
+  width: 100%;
 }
 
 .BlackPage-Card-Container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
   height: 94vh;
 }
 
 .BlackPage-Card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 1.3rem;
   height: 20rem;
   background-color: rgb(110, 110, 110);
-  width: 14rem
+  width: 14rem;
+  padding: 0 1.4rem 0 1.4rem;
+}
+
+.BlackPage-Card-Title {
+  color: #acc94d
 }
 
 .BlackPage-Card-Img {
@@ -22,4 +31,3 @@
   width: 4rem;
   border-radius: 60px;
 }
-
